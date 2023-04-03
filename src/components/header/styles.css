@@ -1,76 +1,77 @@
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s ease;
-    font-size: 16px;
-    overflow-x: hidden;
-    scroll-padding-top: 9rem;
-    scroll-behavior: smooth;
+.header {
+  background-color: #fff;
+  height: 5rem;
+  padding: 0 7%;
+  margin: 0 0 2rem;
+  border-radius: 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .logoDiv {
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
+  height: 100%;
+  margin-top: 1.5%;
+  display: flex;
+  align-items: center;
 }
 
-.header {
-    background-color: #fff;
-    height: 5rem;
-    padding: 0 7%;
-    margin: 2rem 3%;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
+.divNavbar {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
 }
 
-.header .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.logoDiv img {
+  width: 280px;
+  height: auto;
 }
 
-.header .navbar a {
-    margin: 0 1rem;
-    margin-top: 1.4rem;
-    position:relative;
-    font-size: 1rem;
-    color: var(--black-color);
-    border-bottom: 0.1rem solid transparent;
+.navbar {
+  height: 100%;
+  margin-top: 1.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header .navbar .active,
-.header .navbar a:hover {
-    border-color: var(--main-color);
-    padding-bottom: 0.5rem;
+.navbar a {
+  margin: 0 1rem;
+  position: relative;
+  font-size: 1rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.header .buttons button {
-    cursor: pointer;
-    font-size: 2rem;
-    margin-left: 2rem;
-    background-color: transparent;
+.navbar .active,
+.navbar a:hover {
+  border-color: var(--main-color);
+  padding-bottom: 0.5rem;
 }
 
-.header .cart-items-container.active {
-    right: 3rem;
+.buttons button {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 2rem;
+  background-color: transparent;
 }
 
-.header .cart-items-container .cart-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 1.5rem;
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+}
+
+.faı {
+  border: 1px solid;
+  border-color: rgb(55, 55, 58);
+  border-radius: 12px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.btn {
+  padding: 5px;
 }

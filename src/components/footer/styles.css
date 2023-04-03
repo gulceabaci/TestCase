@@ -1,6 +1,6 @@
-footer {
+.footer {
   background-color: #000;
-  padding: 20px;
+  padding: 15px;
 }
 
 .grid-container {
@@ -35,13 +35,24 @@ li {
 .bottom {
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.6rem;
+  margin-left: 18px;
+}
+
+.link {
+  margin-left: 30px;
+  text-decoration: underline;
+}
+
+.link a {
+  padding: 5px;
 }
 
 .bottomOrta {
   color: white;
   margin: 3px;
-
 }
 
 .bottomLink {
@@ -51,4 +62,68 @@ li {
 .h4 {
   color: coral;
   width: 20px;
+}
+
+.share svg {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.grid-item-p {
+  color: rgba(255, 170, 0, 0.696);
+  width: 87%;
+  margin: 7px 0px;
+}
+
+.share div {
+  text-align: center;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.spanTxt {
+  font-size: 0.72rem;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.logo-store {
+  display: flex;
+  flex-direction: row;
+  width: 34%;
+  margin-top: 17px;
+}
+
+.icon-sosyal {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom div:first-child {
+    margin-bottom: 10px;
+  }
+
+  .bottom span {
+    margin-top: 10px;
+  }
+
+  .bottomOrta {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
 }
