@@ -7,10 +7,9 @@ function Header() {
       <header class="header">
         <div className="navbar">
           <div className="logoDiv">
-            <a href="#" class="logoA">
-              <img src="#" alt="logo" />
+            <a href="#">
+            <img src="https://cms.sigortayeri.com/upload/microsites/logo-2_722157.png" alt="logo" width="150" height="150" />
             </a>
-            <span>GüvenleKirala</span>
           </div>
           <div>
             <nav class="navbar">
